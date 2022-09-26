@@ -1,0 +1,37 @@
+//HEADER
+.logo {
+    font-weight: bolder;
+    color: $background-color;
+
+    @include font-size(20);
+}
+
+//MAIN
+.teaser {
+    margin-top: -70px;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+
+    &__text {
+        z-index: 5;
+        color: $background-color;
+        position: absolute;
+        top: 35%;
+
+        h1,
+        h2 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            @include font-size(50);
+        }
+
+        p {
+            width: 66%;
+            line-height: 20px;
+
+            @include font-size(14);
+        }
+    }
+}
